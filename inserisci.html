@@ -1,16 +1,19 @@
 <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Inserisci Telefono</title>
+</head>
 <body style="background-color: lightseagreen; color: darkblue; text-align: center;">
-<h1>inserisci nuovo telefono:</h1>
- 
-<form action="inserisci.php" method="POST">
-<label for="nome">Marca:</label>
-<input type="text" id="marca" name="marca"><br>
-<label for="cognome">modello:</label>
-<input type="text" id="modello" name="modello"><br>
-<label for="sesso">Prezzo:</label>
-<input type="text" id="prezzo" name="prezzo"><br>
-<input type="submit" value="inserisci!">
-</form>
+  <h1>Inserisci Nuovo Telefono</h1>
+  <form action="inserisci.php" method="POST">
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" name="marca" required><br><br>
+    <label for="modello">Modello:</label>
+    <input type="text" id="modello" name="modello" required><br><br>
+    <label for="prezzo">Prezzo:</label>
+    <input type="number" step="0.01" id="prezzo" name="prezzo" required><br><br>
+    <input type="submit" value="Inserisci">
+  </form>
 </body>
 </html>
- 
